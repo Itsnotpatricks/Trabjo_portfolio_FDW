@@ -8,3 +8,10 @@ display: flex;
  justify-content:space-between;
 
 }
+
+nav> a:hover{
+
+ color: rgb(41, 68, 15);
+
+
+ }
