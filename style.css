@@ -2,20 +2,38 @@
 
 *{
 scroll-behavior: smooth;
+
 }
 
 nav{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 display: flex; 
  justify-content:space-between;
 
 }
 
+a{
+
+   text-decoration: none;
+   color: darkred;
+
+
+}
 nav> a:hover{
 
- color: rgb(41, 68, 15);
-
+ color: rgb(74, 87, 61);
 
  }
 
- 
+   footer{
+
+     background-color: darkred;
+     color: white;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     padding: 25px;
+     text-align: start;
+    
+
+
+     }
