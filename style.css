@@ -25,37 +25,65 @@ nav> a:hover{
  color: rgb(74, 87, 61);
 
  }
+img{
+width:100%;
+height: auto;
+vertical-align: middle;}
 
-  
+#fotos{
+  display: flex;
+  flex-direction: column;
+gap: 40px;
 
-.imagen-p {
-   width: 40%;
-   height: auto;
-   border-radius: 17px;
-   
+}
+#fotos > .pro-row{
+  display: flex;
+  gap: 20px;
+}
+#fotos>.pro-row>.col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+#fotos>.pro-row>.small-col{
+ width: 55%;
+
+}
+#fotos>.pro-row>.big-col{
+ width: 65%;
+ 
 }
 
 
+ .big-col:hover{
+  transform: scale(0.9);
+  filter: brightness(0.9);
+  opacity: 80%;
+  transition: 0.5s
+
+ }
+ .small-col:hover{
+  transform: scale(0.9);
+  filter: brightness(0.9);
+  opacity: 80%;
+ transition: 0.5s;
+ }
 
 
+  footer{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: darkred;
+    color: aliceblue;
+    display: flex;
+    justify-content:  space-between;
+    padding:0.5%;
+    
+    
+ 
+}
 
 
+ 
 
 
-
-
-
-
-
-
-
-   footer{
-
-     background-color: darkred;
-     color: white; 
-     display: flex;
-     gap: inherit;
-     justify-content:space-between;
-
-     }
