@@ -1,5 +1,5 @@
 
-
+/*Portada*/
 *{
 scroll-behavior: smooth;
 
@@ -140,10 +140,13 @@ transition: 0.5s;
 
 .menu-item:hover{
   filter:grayscale(100%);
-  
+
   transition:0.9s;
 
 
 
 
 }
+
+/*ABOUTME.HTML*/
+
