@@ -2,10 +2,23 @@
 /*Portada*/
 *{
 scroll-behavior: smooth;
-box-sizing: border-box;
+
+
 
 }
+h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 45px;
 
+}
+p{ 
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+ align-items: self-start;
+ color:darkred;
+ display: flex;
+ justify-content:left;
+
+}
 nav{
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
@@ -77,6 +90,7 @@ gap: 40px;
     background-color: darkred;
     color: aliceblue;
     display: flex;
+    justify-items: end;
     justify-content:  space-between;
     padding:0.5%;
     
@@ -152,56 +166,35 @@ transition: 0.5s;
 }
 
 /*Fauna gallery*/
- .F-Gallery{
-display:flex;
-flex-wrap:wrap;
-height: auto;
-width: auto;
+#fauna {
+    padding: 20px 0 80px 0;
 }
 
-.F{
-position:relative;
-width:25%;
-height:200x;
-overflow:hidden;
+#faunag{
+padding: 20px 0 80px 0 ;
 }
 
-.F img{
-  position: relative;
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-padding: 12px;
+#faunag > ul{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
 }
 
-.info-T{
-  font-family: monospace;
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:darkred;
-background-color:aliceblue;
-;
 
-opacity:0;
-transition:0.9s;
+#faunag > ul > li{
+height: 25vh;
+flex-grow: 1;
+}
+#faunag > ul > li > img{
+max-height: 100%;
+min-width: 100%;
+object-fit: cover;
 }
 
-.F:hover .info-T{
-opacity:96%;
+#faunag > ul > li > img:hover{
+opacity: 1%;
+transition: 0.8s
 
 }
- 
-
-
-
-
-
 
