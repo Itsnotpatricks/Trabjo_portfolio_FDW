@@ -114,6 +114,7 @@ h1{
  .flex-cont-wrap{
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
@@ -135,37 +136,32 @@ transition: 0.5s;
 
 
 .menu-container{
-  display:flex;
-  justify-content:space-evenly;
-  width:100%;
-  margin:auto;
-  gap:40px;
+display:flex;
+justify-content:space-evenly;
+width:100%;
+margin:auto;
+gap:40px;
+flex-wrap: wrap; 
 }
 
 .menu-item{
-  flex:1;
-  text-align:center;
+flex:1 1 250px;
+text-align:center;
 }
 
 .menu-item img{
-  width:100%;
-  height:600px;
-  bottom: 150px;
-  object-fit:cover;
-  border-radius:30px;
-  display: flex;
-  justify-content: sp;
+width:100%;
+height:400px; 
+object-fit:cover;
+border-radius:30px;
+transition:0.9s;
 }
 
-.menu-item:hover{
-  filter:grayscale(100%);
-
-  transition:0.9s;
-
-
-
-
+.menu-item img:hover{
+filter:grayscale(100%);
 }
+
+
 
 /*Fauna gallery*/
 #fauna {
@@ -197,69 +193,39 @@ object-fit: cover;
 
 #faunag > ul > li > img:hover{
 opacity: 1%;
-transition: 0.8s
+transition: 0.8s;
 
 }
 
 
-
-/* MEDIA QUERIES */
-
-/* Este bloque de selectores solo funcionará cuando se cumpla la condición de que la pantalla del usuario sea menor de 720px */
 
 /* TABLET */
-@media screen and (max-width: 720px) {
+@media (max-width:900px){
 
-    .wrapper {
-        padding: 0 20px;
-    }
+.menu-container{
+gap:20px;
+}
 
-    h1 {
-        font-size: 48px;
-    }
+.menu-item{
+flex:1 1 45%;
+}
 
-    #projects > .pro-row {
-        flex-wrap: wrap;
-    }
-
-    #projects > .pro-row > .col {
-        width: 100%;
-    }
-
-    #gallery > ul > li {
-        flex: 45%;
-    }
-
-    footer > .f-row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer > .f-row > .copyright {
-        padding-top: 40px;
-        text-align: center;
-    }
+.menu-item img{
+height:300px;
+}
 
 }
 
-/* MOBILE */
-@media screen and (max-width: 480px) {
-    
-    .wrapper {
-        padding: 0 10px;
-    }
+/* MÓVIL */
+@media (max-width:600px){
 
-    /* Con opacity el elemento se vuelve transparente */
-    /* header > div:last-child {
-        opacity: 0;
-    } */
+.menu-item{
+flex:1 1 100%;
+}
 
-    header > div:last-child {
-        display: none;
-    }
-
-    #gallery > ul > li {
-        flex: 100%;
-    }
+.menu-item img{
+height:250px;
+}
 
 }
+
