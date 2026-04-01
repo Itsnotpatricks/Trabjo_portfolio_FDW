@@ -12,6 +12,8 @@ font-size: 45px;
 
 }
 p{ 
+  padding:auto;
+  gap: auto;
  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
  align-items: self-start;
  color:darkred;
@@ -190,6 +192,7 @@ flex-grow: 1;
 max-height: 100%;
 min-width: 100%;
 object-fit: cover;
+
 }
 
 #faunag > ul > li > img:hover{
@@ -198,3 +201,65 @@ transition: 0.8s
 
 }
 
+
+
+/* MEDIA QUERIES */
+
+/* Este bloque de selectores solo funcionará cuando se cumpla la condición de que la pantalla del usuario sea menor de 720px */
+
+/* TABLET */
+@media screen and (max-width: 720px) {
+
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    #projects > .pro-row {
+        flex-wrap: wrap;
+    }
+
+    #projects > .pro-row > .col {
+        width: 100%;
+    }
+
+    #gallery > ul > li {
+        flex: 45%;
+    }
+
+    footer > .f-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > .f-row > .copyright {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    /* Con opacity el elemento se vuelve transparente */
+    /* header > div:last-child {
+        opacity: 0;
+    } */
+
+    header > div:last-child {
+        display: none;
+    }
+
+    #gallery > ul > li {
+        flex: 100%;
+    }
+
+}
