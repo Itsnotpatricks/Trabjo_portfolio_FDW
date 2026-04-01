@@ -2,6 +2,7 @@
 /*Portada*/
 *{
 scroll-behavior: smooth;
+box-sizing: border-box;
 
 }
 
@@ -136,6 +137,8 @@ transition: 0.5s;
   bottom: 150px;
   object-fit:cover;
   border-radius:30px;
+  display: flex;
+  justify-content: sp;
 }
 
 .menu-item:hover{
@@ -148,5 +151,57 @@ transition: 0.5s;
 
 }
 
-/*ABOUTME.HTML*/
+/*Fauna gallery*/
+ .F-Gallery{
+display:flex;
+flex-wrap:wrap;
+height: auto;
+width: auto;
+}
+
+.F{
+position:relative;
+width:25%;
+height:200x;
+overflow:hidden;
+}
+
+.F img{
+  position: relative;
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+padding: 12px;
+}
+
+.info-T{
+  font-family: monospace;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:darkred;
+background-color:aliceblue;
+;
+
+opacity:0;
+transition:0.9s;
+}
+
+.F:hover .info-T{
+opacity:96%;
+
+}
+ 
+
+
+
+
+
 
