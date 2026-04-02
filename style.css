@@ -353,6 +353,13 @@ flex-wrap: wrap;
   font-size: 30px;
  width: 44%;
  line-height: 1.5;
+
+}
+.info >p:hover{
+
+color:rgb(74, 87, 61);
+transition: 0.7s;
+
 }
 .right{
 width: 35%;
@@ -425,9 +432,15 @@ border: none;
 padding: 8px 12px;
 border-radius: 9px;
 cursor: pointer;
+transition: 0.4s ease;
+
 
 }
-
+.cv-button:hover{
+background-color:rgb(74, 87, 61) ;
+  transform: scale(0.700 );
+transition: 0.7s;
+}
 
 
 
